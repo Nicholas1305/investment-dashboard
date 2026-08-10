@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investment Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <h1>Investment Dashboard</h1>
+    <div class="meta" id="generated-at">Lade Daten…</div>
+  </header>
+
+  <div class="errors-banner" id="errors-banner"></div>
+
+  <section class="panel" id="panel-feargreed">
+    <h2>Stock Market Fear &amp; Greed Index</h2>
+    <div class="fg-layout">
+      <div class="fg-hero">
+        <div class="label">Aktueller Wert</div>
+        <div class="value" id="fg-value">–</div>
+        <span class="pill" id="fg-rating">–</span>
+        <div class="fg-meter">
+          <div class="track"><div class="marker" id="fg-marker" style="left:50%"></div></div>
+          <div class="zone-labels">
+            <span>Ext. Angst</span><span>Angst</span><span>Neutral</span><span>Gier</span><span>Ext. Gier</span>
+          </div>
+        </div>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; margin-top:16px;">
+          <div class="stat-tile">
+            <div class="label">Vor 1 Woche</div>
+            <div class="value" id="fg-prev-week" style="font-size:20px;">–</div>
+            <div class="sub"><span id="fg-prev-week-delta"></span></div>
+          </div>
+          <div class="stat-tile">
+            <div class="label">Vor 1 Monat</div>
+            <div class="value" id="fg-prev-month" style="font-size:20px;">–</div>
+            <div class="sub"><span id="fg-prev-month-delta"></span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="grid" style="grid-template-columns: 1fr 1fr; margin-bottom:16px;">
+          <div class="stat-tile">
+            <div class="label">S&amp;P 500 Momentum (CNN)</div>
+            <div class="value" id="fg-momentum" style="font-size:22px;">–</div>
+            <div class="sub" id="fg-momentum-rating"></div>
+          </div>
+          <div class="stat-tile">
+            <div class="label">VIX Volatilität (CNN)</div>
+            <div class="value" id="fg-vix" style="font-size:22px;">–</div>
+            <div class="sub" id="fg-vix-rating"></div>
+          </div>
+        </div>
+        <div class="label" style="font-size:12px;color:var(--text-secondary);margin-bottom:6px;">Verlauf (wöchentlich)</div>
+        <div id="fg-chart"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-rates">
+    <h2>Leitzinsen</h2>
+    <div class="rate-card">
+      <div class="rate-block">
+        <div class="name">🇪🇺 EZB – Europäische Zentralbank</div>
+        <div id="ecb-rows"></div>
+      </div>
+      <div class="rate-block">
+        <div class="name">🇺🇸 Fed – Federal Reserve</div>
+        <div id="fed-rows"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-yields">
+    <h2>Zinsen &amp; Inflation</h2>
+    <div class="grid">
+      <div class="stat-tile"><div class="label">US Treasury 10Y</div><div class="value" id="us10y">–</div><div class="sub" id="us10y-date"></div></div>
+      <div class="stat-tile"><div class="label">US Treasury 2Y</div><div class="value" id="us2y">–</div><div class="sub" id="us2y-date"></div></div>
+      <div class="stat-tile"><div class="label">Spread 10Y–2Y</div><div class="value" id="spread">–</div><div class="sub" id="spread-date"></div></div>
+      <div class="stat-tile"><div class="label">Inflation USA CPI YoY</div><div class="value" id="cpi-us">–</div><div class="sub" id="cpi-us-date"></div></div>
+      <div class="stat-tile"><div class="label">Inflation EU HICP YoY</div><div class="value" id="hicp-eu">–</div><div class="sub" id="hicp-eu-date"></div></div>
+    </div>
+    <div style="margin-top:18px;">
+      <div class="label" style="font-size:12px;color:var(--text-secondary);margin-bottom:6px;">Spread 10Y–2Y – Verlauf (wöchentlich)</div>
+      <div id="spread-chart"></div>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-commodities">
+    <h2>Rohstoffe &amp; Währungen</h2>
+    <div class="grid">
+      <div class="stat-tile"><div class="label">Gold (USD/oz)</div><div class="value" id="gold">–</div><div class="sub" id="gold-date"></div></div>
+      <div class="stat-tile"><div class="label">WTI Öl (USD/bbl)</div><div class="value" id="wti">–</div><div class="sub" id="wti-date"></div></div>
+      <div class="stat-tile"><div class="label">EUR/USD</div><div class="value" id="eurusd">–</div><div class="sub" id="eurusd-date"></div></div>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-indices">
+    <h2>Regionen &amp; Breite Indizes</h2>
+    <div class="table-wrap">
+      <table class="perf">
+        <thead><tr><th>ETF</th><th>1W</th><th>1M</th><th>YTD</th><th>1J</th><th>3J</th></tr></thead>
+        <tbody id="indices-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-sectors">
+    <h2>Branchen – MSCI World Sektoren</h2>
+    <div class="table-wrap">
+      <table class="perf">
+        <thead><tr><th>ETF</th><th>1W</th><th>1M</th><th>YTD</th><th>1J</th><th>3J</th></tr></thead>
+        <tbody id="sectors-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="foot">Automatisch generiert · Quellen: CNN, ECB, Federal Reserve (FRED), Yahoo Finance</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

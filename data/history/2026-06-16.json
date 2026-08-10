@@ -1,0 +1,6 @@
+{
+  "generated_at": "2026-06-16T06:00:00+00:00",
+  "fear_greed": { "current": { "value": 28.4, "rating": "Fear" } },
+  "fred": { "spread_10y_2y": { "value": 0.61, "date": "2026-06-13" } },
+  "ecb": { "ecb_main_rate": { "current": { "value": 2.15, "since": "2025-06-11" } } }
+}
