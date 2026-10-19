@@ -1,0 +1,271 @@
+{
+  "generated_at": "2026-10-19T11:45:33.322379+00:00",
+  "fear_greed": {
+    "current": {
+      "value": 19.8,
+      "rating": "extreme fear"
+    },
+    "previous_week": {
+      "value": 46.3,
+      "change": -26.5
+    },
+    "previous_month": {
+      "value": 30.4,
+      "change": -10.6
+    },
+    "subindicators": {
+      "sp500_momentum": {
+        "value": 23.6,
+        "rating": "extreme fear"
+      },
+      "vix_volatility": {
+        "value": 17.2,
+        "rating": "extreme fear"
+      }
+    }
+  },
+  "ecb": {
+    "ecb_main_rate": {
+      "current": {
+        "value": 2.65,
+        "since": "2026-09-16"
+      },
+      "previous": {
+        "value": 2.4,
+        "since": "2026-06-17"
+      }
+    },
+    "hicp_eu_yoy": {
+      "value": 1.9,
+      "date": "2025-12"
+    }
+  },
+  "fred": {
+    "fed_funds": {
+      "current": {
+        "range": "3.75-4.00",
+        "since": "2026-09-17"
+      },
+      "previous": {
+        "range": "3.50-3.75",
+        "since": "2026-04-02"
+      },
+      "change_bp": 25
+    },
+    "us_10y": {
+      "value": 5.1,
+      "date": "2026-10-15"
+    },
+    "us_2y": {
+      "value": 4.77,
+      "date": "2026-10-15"
+    },
+    "spread_10y_2y": {
+      "value": 0.33,
+      "date": "2026-10-15"
+    },
+    "cpi_us_yoy": {
+      "value": 3.7,
+      "date": "2026-09-01"
+    }
+  },
+  "commodities_fx": {
+    "gold_usd_oz": {
+      "value": 4189.0,
+      "date": "2026-10-19"
+    },
+    "wti_usd_bbl": {
+      "value": 98.17,
+      "date": "2026-10-19"
+    },
+    "eur_usd": {
+      "value": 1.1226,
+      "date": "2026-10-19"
+    }
+  },
+  "indices": [
+    {
+      "name": "S&P 500",
+      "ticker": "CSPX.L",
+      "1w": -1.43,
+      "1m": 0.93,
+      "ytd": 12.44,
+      "1y": 15.36,
+      "3y": 87.53,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "NASDAQ-100",
+      "ticker": "EQQQ.DE",
+      "1w": -4.32,
+      "1m": 2.41,
+      "ytd": 22.53,
+      "1y": 21.9,
+      "3y": 90.97,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "DAX",
+      "ticker": "EXS1.DE",
+      "1w": -0.02,
+      "1m": -0.1,
+      "ytd": 2.53,
+      "1y": 3.63,
+      "3y": 68.05,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "STOXX Europe 600",
+      "ticker": "EXSA.DE",
+      "1w": 0.62,
+      "1m": 0.78,
+      "ytd": 7.28,
+      "1y": 11.63,
+      "3y": 47.76,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "EURO STOXX 50",
+      "ticker": "EXW1.DE",
+      "1w": -1.18,
+      "1m": -1.5,
+      "ytd": 4.85,
+      "1y": 8.04,
+      "3y": 52.74,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "MSCI World",
+      "ticker": "IWDA.AS",
+      "1w": -1.56,
+      "1m": 2.48,
+      "ytd": 16.74,
+      "1y": 18.9,
+      "3y": 72.78,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "MSCI Emerging Mkts",
+      "ticker": "EIMI.L",
+      "1w": -3.82,
+      "1m": -4.3,
+      "ytd": 16.0,
+      "1y": 17.3,
+      "3y": 83.78,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Nikkei 225",
+      "ticker": "EXX1.DE",
+      "1w": -3.03,
+      "1m": -8.82,
+      "ytd": 6.23,
+      "1y": 26.21,
+      "3y": 168.96,
+      "as_of": "2026-10-19"
+    }
+  ],
+  "sectors": [
+    {
+      "name": "Information Technology",
+      "ticker": "XDWT.DE",
+      "1w": -5.03,
+      "1m": 1.94,
+      "ytd": 29.27,
+      "1y": 27.54,
+      "3y": 126.52,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Energy",
+      "ticker": "SPYW.DE",
+      "1w": 2.18,
+      "1m": -2.35,
+      "ytd": 10.07,
+      "1y": 12.34,
+      "3y": 49.54,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Industrials",
+      "ticker": "IS3R.DE",
+      "1w": -4.46,
+      "1m": -0.75,
+      "ytd": 20.31,
+      "1y": 22.21,
+      "3y": 96.17,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Health Care",
+      "ticker": "XDWH.DE",
+      "1w": 2.39,
+      "1m": 5.95,
+      "ytd": 14.28,
+      "1y": 20.28,
+      "3y": 28.31,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Financials",
+      "ticker": "XDWF.DE",
+      "1w": -0.1,
+      "1m": -0.34,
+      "ytd": 11.25,
+      "1y": 18.6,
+      "3y": 91.98,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Consumer Staples",
+      "ticker": "XDWS.DE",
+      "1w": 4.06,
+      "1m": 8.81,
+      "ytd": 16.93,
+      "1y": 14.39,
+      "3y": 30.04,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Consumer Discretionary",
+      "ticker": "XDWD.DE",
+      "1w": -1.54,
+      "1m": 2.54,
+      "ytd": 17.11,
+      "1y": 19.06,
+      "3y": 73.1,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Utilities",
+      "ticker": "XDWU.DE",
+      "1w": 1.1,
+      "1m": 3.97,
+      "ytd": 7.11,
+      "1y": 4.92,
+      "3y": 54.62,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Materials",
+      "ticker": "XDWM.DE",
+      "1w": -0.62,
+      "1m": 1.12,
+      "ytd": 17.27,
+      "1y": 22.24,
+      "3y": 47.24,
+      "as_of": "2026-10-19"
+    },
+    {
+      "name": "Communication Svcs",
+      "ticker": "XDWC.DE",
+      "1w": -0.84,
+      "1m": 3.66,
+      "ytd": 0.27,
+      "1y": 0.75,
+      "3y": 38.48,
+      "as_of": "2026-10-19"
+    }
+  ],
+  "errors": []
+}
